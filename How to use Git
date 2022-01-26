@@ -1,0 +1,8 @@
+###How to use Git
+
+1. Go to Terminal after saving file.
+2. In terminal:
+	2a. add file: git add .
+	2b. commit file: git commit -m"description"
+	2c. push code: git push
+3. How to check git status: git status
