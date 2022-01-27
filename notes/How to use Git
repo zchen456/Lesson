@@ -8,3 +8,4 @@
 3. How to check git status: git status
 
 cmd + r: refresh web browser
+cmd + k: refresh terminal

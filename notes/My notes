@@ -1,0 +1,21 @@
+My notes
+
+1.
+import java.util.Scanner;
+class ScannerTest{
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();				
+		string name = scan.next();
+		boolean isLove = scan.nextBoolean();
+
+		string gender = scan.next();
+		char genderChar = gender.charAt(0);     取string gender结果里的第一个字符，也就是第0位
+		system.out.println(genderChar);
+	}
+}
+
+2.
+double Value = Math.random();     double下的取随机数的方法，范围是[0.0 , 0.1)
+[a , b]: (int)(Math.random() * (b-a+1) + a)
+3.
