@@ -6,3 +6,5 @@
 	2b. commit file: git commit -m"description"
 	2c. push code: git push
 3. How to check git status: git status
+
+cmd + r: refresh web browser
