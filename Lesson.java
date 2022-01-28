@@ -141,6 +141,11 @@ class Lesson6{
   **
  ***
 ****
+
+****
+ ***
+  **
+   *
 */
 class Lesson7{
 	public static void main(String[] args){
@@ -192,6 +197,38 @@ class Lesson7{
 /*
 练习8：99乘法表
 */
+class Lesson8{
+	public static void main(String[] args){
+		for(int m = 1;m <= 9;m++){
+			for(int n = 1;n <= m; n++){
+				System.out.print(m + "*" + n + "=" + (m * n) + " ");
+			}
+		System.out.println();
+		}
+	}
+}
+
+
+/*
+练习9:遍历100以内的所有质数 （最小的质数为2）
+*/
+class Lesson9{
+	public static void main(String[] args){	
+		for(int n = 2;n <= 100;n++){
+			boolean isFlag = true;
+			for(int m = 2; m < Math.sqrt(n);m++){
+				if(n % m == 0){
+					isFlag = false;
+					break;
+				}
+			}
+			if(isFlag == true){
+				System.out.println(n);
+			}
+
+		}
+	}
+}
 
 
 

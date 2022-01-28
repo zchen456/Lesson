@@ -18,4 +18,16 @@ class ScannerTest{
 2.
 double Value = Math.random();     double下的取随机数的方法，范围是[0.0 , 0.1)
 [a , b]: (int)(Math.random() * (b-a+1) + a)
-3.
+
+3. m等于n的开方
+Int m = Math.sqrt(n)
+
+4. while停止程序的两种方法
+while(true){         or        boolean isFlag = true;
+	break;                     while(isFlag){
+}       							isFlag = false;
+                               }
+
+5. 
+
+
