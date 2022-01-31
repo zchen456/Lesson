@@ -203,7 +203,7 @@ class Lesson8{
 			for(int n = 1;n <= m; n++){
 				System.out.print(m + "*" + n + "=" + (m * n) + " ");
 			}
-		System.out.println();
+			System.out.println();
 		}
 	}
 }

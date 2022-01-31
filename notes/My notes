@@ -28,6 +28,7 @@ while(true){         or        boolean isFlag = true;
 }       							isFlag = false;
                                }
 
-5. 
+5. 字符串String的比较
+String dest.equals(arr[i])
 
 
