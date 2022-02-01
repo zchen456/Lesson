@@ -31,4 +31,20 @@ while(true){         or        boolean isFlag = true;
 5. 字符串String的比较
 String dest.equals(arr[i])
 
+6. java.util.Arrays
+(1) 判断是否相等 boolean equals(int[] a,int[] b)
+(2) String toString(int[] a)输出数组信息
+(3) void fill(int[] a,int val)将指定值填充到数组之中
+(4) void sort(int[] a)对数组进行排序
+(5) int binarySearch(int[] a,int key)
+
+
+
+
+
+
+
+
+
+
 

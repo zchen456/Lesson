@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /*
 练习11:从键盘读入学生成绩，找出最高分，并输出学生成绩等级。
 成绩 >= 最高分-10分  等级为A
@@ -297,6 +298,93 @@ class Lesson18{
 		}
 	}
 }
+
+
+/*
+二分法查找：前提-所要查找的数组必须有序
+*/class Lesson19{
+	public static void main(String[] args){
+		int[] arr2 = new int[]{-98,-34,2,34,54,66,79,105,210,333};
+		int dest1 = -34;
+		int head = 0;//初始的手索引
+		int end = arr2.length - 1;//初始的末索引
+		boolean isFlag1 = true;
+		while(head <= end){
+			int middle = (head + end)/2;
+			if(dest1 == arr2[middle]){
+				System.out.println("找到了指定的元素，位置为：" + middle);
+				isFlag1 = false;
+				break;
+			}else if(arr2[middle] > dest1){
+				end = middle - 1;
+			}else{//(arr2[middle] < dest1)
+				head = middle + 1;
+			}
+		}
+		if(isFlag1){
+			System.out.println("很遗憾，没有找到");
+		}
+	}
+}
+
+
+/*
+数组的冒泡排序
+*/
+class Lesson20{
+	public static void main(String[] args){
+		int[] arr = new int[]{43,32,76,-98,0,64,33,-21,32,99};
+		for(int i = 0;i < arr.length - 1;i++){
+			for(int j = 0;j < arr.length - 1 - i;j++){
+				if(arr[j] > arr[j + 1]){
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+			}
+		}
+		for(int i = 0;i < arr.length;i++){
+			System.out.print(arr[i] + "\t");
+		}
+	}
+}
+
+
+/*
+java.util.Arrays:操作数组的工具类，里面定义了很多操作数组的方法
+*/
+class Lesson21{
+	public static void main(String[] args){
+		//boolean equals(int[] a,int[] b)判断两个数组是否相等
+		int[] arr1 = new int[]{1,2,3,4};
+		int[] arr2 = new int[]{1,3,2,4};
+		boolean isEquals = Arrays.equals(arr1,arr2);
+		System.out.println(isEquals);
+
+		//String toString(int[] a)输出数组信息
+		System.out.println(Arrays.toString(arr1));
+
+		//void fill(int[] a,int val)将指定值填充到数组之中
+		Arrays.fill(arr1,10);
+		System.out.println(Arrays.toString(arr1));
+
+		//void sort(int[] a)对数组进行排序
+		Arrays.sort(arr2);
+		System.out.println(Arrays.toString(arr2));
+
+		//int binarySearch(int[] a,int key)
+		int[] arr3 = new int[]{-98,-34,2,34,54,66,79,105,210,333};
+		int index = Arrays.binarySearch(arr3, 210);
+		if(index >=0){
+			System.out.println(index);
+		}else{
+			System.out.println("未找到");
+		}	
+	}
+}
+
+
+
 
 
 
